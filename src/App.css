@@ -1,0 +1,200 @@
+/* #1402E0
+#2D99E1 */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+
+  font-family: "Merriweather";
+  font-size: normal;
+  font-weight: bold;
+  color: #142F7E;
+
+}
+
+
+body {
+
+  background-color: #1402E0;
+  caret-color: transparent;
+}
+
+.todo-container{
+
+  background-color: #9DD9F3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2vh 30vw 0vw 30vw;
+  padding: 0% 1% 1% 1%;
+  border-radius: 10px;
+  @media (width < 1000px) {
+    margin: 2vh 2vw 2vh 2vw;
+  }
+}
+
+.title-tag{
+
+  margin: 3%;
+  font-size: larger;
+}
+
+.items-container{
+
+  display: flex;
+  max-width: 20vw;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vh 0 2vh 0;
+  @media (width < 1000px) {
+    max-width: 67vw;
+  }
+
+}
+
+.item-container{
+
+  display: flex;
+  flex-direction: row;
+  margin: 2vh 0 0 0;
+  align-items: center;
+  width: 20vw;
+  min-height: 5vh;
+  max-height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  border-color: #2050E0;
+  border: 2px solid;
+  text-wrap: wrap;
+  @media (width < 1000px) {
+    width: 67vw;
+  }
+}
+
+.close-icon{
+
+  margin-left: auto;
+  width: 2vw;
+  color: #2050E0;
+  @media (width < 1000px) {
+    width: 10vw;
+  }
+}
+
+.close-icon:hover{
+
+  cursor: pointer;
+}
+
+.edit-icon{
+
+  margin-left: auto;
+  width: 2vw;
+  color: #2050E0;
+  @media (width < 1000px) {
+    width: 10vw;
+  }
+
+}
+
+.edit-icon:hover{
+
+  cursor: pointer;
+}
+
+.todo-item{
+
+  margin: 0 auto 0 auto;
+  padding: 4% 0% 4% 4%;
+}
+
+.todo-item:hover{
+  
+  cursor: pointer;
+  
+}
+
+.todo-item-text{
+  
+  text-align: center;
+  display: inline-block;
+  word-break: break-word;
+}
+
+.edit-todo-item{
+
+  border-radius: 10px;
+  font-weight: normal;
+  caret-color: black;
+  text-align: center;
+  box-shadow: none;
+  border: none;
+  font-size: normal;
+  font-weight: bold;
+  max-width: 15vw;
+  @media (width < 1000px) {
+    max-width: 75vw;
+  }
+  
+  
+}
+
+.edit-todo-item:focus{
+  
+  caret-color: black;
+  outline-color: transparent;
+  box-shadow: none;
+
+
+}
+
+.input-box{
+  
+  width: 14vw;
+  border-radius: 10px;
+  border: none;
+  font-weight: normal;
+  padding: 0.5vw;
+  caret-color: black;
+  font-size: large;
+  @media (width < 1000px) {
+    width: 47vw;
+  }
+}
+
+::placeholder{
+
+  text-align: center;
+  font-size: large;
+  color: #142F7E;
+  
+}
+
+
+.add-button{
+  background-color: #2050E0;
+  color: white;
+  width: 3.5vw;
+  border-radius: 10px;
+  border: none;
+  @media (width < 1000px) {
+    width: 12vw;
+  }
+}
+
+.add-button:hover{
+
+  cursor: pointer;
+}
+
+
+
+
+.todo-bar-container{
+
+  width: 20vw;
+  display: flex;
+  justify-content: space-evenly;
+  @media (width < 1000px) {
+    width: 67vw;
+  }
+}
