@@ -6,13 +6,7 @@ import { faXmark, faEdit } from '@fortawesome/free-solid-svg-icons'
 const TodoItem = ({ todoObj, toggleComplete, handleDelete, handleEdit }) => {
   
   
-  function strikeThrough(text) {
-    return text
-    .split('')
-    .map(char => char + '\u0336')
-    .join('')
-  }
-  
+
   
   
   const renderItem = () => {
@@ -24,7 +18,7 @@ const TodoItem = ({ todoObj, toggleComplete, handleDelete, handleEdit }) => {
       }
       else {
         
-        return <div className = "todo-item-text" onClick={() => toggleComplete(todoObj.id)}> {todoObj.completed ? strikeThrough(todoObj.name) : todoObj.name} </div>
+        return <div className = {todoObj.completed ? "todo-item-text completed" : "todo-item-text"} onClick={() => toggleComplete(todoObj.id)}>{todoObj.name}</div>
 
       }
     

@@ -120,6 +120,12 @@ body {
   word-break: break-word;
 }
 
+.todo-item-text.completed{
+  
+  text-decoration: line-through;
+  
+}
+
 .edit-todo-item{
 
   border-radius: 10px;
@@ -132,7 +138,7 @@ body {
   font-weight: bold;
   max-width: 15vw;
   @media (width < 1000px) {
-    max-width: 75vw;
+    max-width: 40vw;
   }
   
   
